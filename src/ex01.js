@@ -12,4 +12,12 @@ if (Number(process.argv[2])) {
     console.log(`Error: you have entered a number`)
     process.exit(NUMBERS)
 }
+
+/* another security option
+if (!isNaN(process.argv[2])) {
+    console.log(`Error: ${process.argv[2]} these are not letters`)
+    process.exit(NUMBERS)
+}
+*/
+
 console.log(`Goodbye, ${string}`)
